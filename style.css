@@ -18,7 +18,7 @@ body, html {
     flex-wrap: wrap;
 }
 
-img{max-width: 100% !important;}
+img { max-width: 100% !important; }
 
 h1 {
     font-weight: bold;
@@ -36,16 +36,16 @@ h1::after {
     margin: 2px 0 15px 0;
 }
 
-span {font-size: 1.5em;}
+span { font-size: 1.5em; }
 
-a {text-decoration: none; color: #000}
+a { text-decoration: none; color: #000; }
 
 p {
     font-size: 1.25em;
     line-height: 1.4em;
 }
 
-p + p {margin: 15px 0;}
+p + p { margin: 15px 0; }
 
 .container {
     width: 1100px;
@@ -71,20 +71,21 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    /* Remova flex-wrap: wrap; */
 }
 
 section.foto-social {
     display: flex;
     align-items: center;
     gap: 20px;
+    flex-wrap: nowrap; /* Garante que não haja quebra de linha */
 }
 
 section.texto {
     flex: 1 1 400px;
 }
 
-section + section {margin-left: 15px;}
+section + section { margin-left: 15px; }
 
 .foto {
     width: 100px;
@@ -115,4 +116,4 @@ ul.social li a {
     transition: opacity 0.3s ease;
 }
 
-ul.social li a:hover {opacity: 0.7;}
+ul.social li a:hover { opacity: 0.7; }
